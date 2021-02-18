@@ -1,0 +1,21 @@
+(S[-INV] (NP[AGR=[NUM='pl']] (DT[AGR=[NUM=?n]] the) (Noun[AGR=[NUM='pl']] dogs)) (VP[AGR=[NUM='pl', TENSE='pres']] (V[AGR=[NUM='pl', TENSE='pres'], SUBCAT='intrans'] bark)) (PUNC[] .))
+(S[-INV] (NP[AGR=[NUM='sg']] (DT[AGR=[NUM=?n]] the) (Noun[AGR=[NUM='sg']] dog)) (VP[AGR=[NUM='sg', TENSE='pres']] (V[AGR=[NUM='sg', TENSE='pres'], -AUX, SUBCAT='intrans'] barks)) (PUNC[] .))
+
+
+
+(S[-INV] (NP[AGR=[NUM='pl']] (Noun[AGR=[NUM='pl']] dogs)) (VP[AGR=[NUM='pl', TENSE='pres']] (V[AGR=[NUM='pl', TENSE='pres'], SUBCAT='intrans'] bark)) (PUNC[] .))
+
+(S[-INV] (NP[AGR=[NUM=?n2]] (PropN[AGR=[NUM=?n], PER=3] Alex)) (VP[AGR=[NUM='sg', TENSE='past']] (V[AGR=[NUM='sg', TENSE='past'], SUBCAT='clause'] thought) (SBar[AGR=?a] (Comp[] that) (S[-INV] (NP[AGR=[NUM='sg']] (DT[AGR=[NUM=?n]] the) (Noun[AGR=[NUM='sg']] book)) (VP[AGR=[NUM='sg', TENSE='past']] (V[AGR=[NUM='sg', TENSE='past'], SUBCAT='intrans'] was) (Adj[] interesting))))) (PUNC[] .))
+
+
+(S[-INV] (NP[AGR=[NUM=?n2]] (PropN[AGR=[NUM=?n], PER=3] Mel)) (VP[AGR=[NUM='sg', TENSE='past']] (V[AGR=[NUM='sg', TENSE='past'], SUBCAT='ditrans'] put) (NP[AGR=[NUM='sg']] (DT[AGR=[NUM=?n]] the) (Noun[AGR=[NUM='sg']] book)) (PP[AGR=?a] (Prep[NUM=?n, TENSE=?t] on) (NP[AGR=[NUM='sg']] (DT[AGR=[NUM=?n]] the) (Noun[AGR=[NUM='sg']] shelf)))) (PUNC[] .))
+(S[+INV] (V[AGR=[NUM='sg', TENSE='past'], +AUX, +INV] did) (NP[AGR=[NUM=?n2]] (PropN[AGR=[NUM=?n], PER=3] Mel)) (VP[AGR=[NUM='sg', TENSE='past']] (V[AGR=[NUM='sg', TENSE='past'], SUBCAT='ditrans'] put) (NP[AGR=[NUM='sg']] (DT[AGR=[NUM=?n]] the) (Noun[AGR=[NUM='sg']] book)) (PP[AGR=?a] (Prep[NUM=?n, TENSE=?t] on) (NP[AGR=[NUM='sg']] (DT[AGR=[NUM=?n]] the) (Noun[AGR=[NUM='sg']] shelf)))) (PUNC[] ?))
+
+(S[-INV] (WDT[AGR=[NUM=?n]] what) (V[AGR=[NUM='sg', TENSE='past'], +AUX, +INV] did) (NP[AGR=[NUM=?n2]] (PropN[AGR=[NUM=?n], PER=3] Mel)) (VP[AGR=[NUM='sg', TENSE='past']] (V[AGR=[NUM='sg', TENSE='past'], SUBCAT='ditrans'] put) (PP[AGR=?a] (Prep[NUM=?n, TENSE=?t] on) (NP[AGR=[NUM='sg']] (DT[AGR=[NUM=?n]] the) (Noun[AGR=[NUM='sg']] shelf)))) (PUNC[] ?))
+
+(S[-INV] (WDT[AGR=[NUM=?n]] what) (V[AGR=[NUM='sg', TENSE='pres'], +AUX, -INV, PER=3] does) (NP[AGR=[NUM=?n2]] (PropN[AGR=[NUM=?n], PER=3] Alex)) (VP[AGR=[NUM='sg', TENSE='pres']] (V[AGR=[NUM='sg', TENSE='pres'], -AUX, SUBCAT='intrans'] know)) (PUNC[] ?))
+(S[-INV] (WDT[AGR=[NUM=?n]] what) (V[AGR=[NUM='sg', TENSE='pres'], +AUX, -INV, PER=3] does) (NP[AGR=[NUM=?n2]] (PropN[AGR=[NUM=?n], PER=3] Mel)) (VP[AGR=[NUM='sg', TENSE='pres']] (V[AGR=[NUM='sg', TENSE='pres'], -AUX, SUBCAT='trans'] think) (NP[AGR=[NUM='sg', TENSE='pres']] (NP[AGR=[NUM=?n2]] (PropN[AGR=[NUM=?n], PER=3] Alex)) (V[AGR=[NUM='sg', TENSE='pres'], -AUX, PER=3, SUBCAT='trans'] knows))) (PUNC[] ?))
+(S[-INV] (NP[AGR=[NUM=?n2]] (PropN[AGR=[NUM=?n], PER=3] Alex)) (VP[AGR=[NUM='sg', TENSE='past']] (V[AGR=[NUM='sg', TENSE='past'], SUBCAT='ditrans'] reached) (NP[AGR=[NUM='sg']] (DT[AGR=[NUM=?n]] the) (Noun[AGR=[NUM='sg']] summit)) (PP[AGR=?a] (Prep[NUM=?n, TENSE=?t] on) (NP[AGR=[NUM='sg']] (PropN[AGR=[NUM='sg']] Tuesday)))) (PUNC[] .))
+(S[-INV] (NP[AGR=[NUM=?n2]] (PropN[AGR=[NUM=?n], PER=3] Mel)) (VP[AGR=[NUM='sg', TENSE='past']] (V[AGR=[NUM='sg', TENSE='past'], SUBCAT='ditrans'] reached) (NP[AGR=[NUM='sg']] (DT[AGR=[NUM=?n]] the) (Noun[AGR=[NUM='sg']] summit)) (PP[AGR=?a] (Prep[NUM=?n, TENSE=?t] for) (NP[AGR=[NUM='pl']] (CD[AGR=[NUM='pl']] five) (Noun[AGR=[NUM='pl']] minutes)))) (PUNC[] .))
+(S[-INV] (NP[AGR=[NUM=?n2]] (PropN[AGR=[NUM=?n], PER=3] Alex)) (VP[AGR=[NUM=?n2, TENSE='past']] (V[AGR=[NUM=?n, TENSE='past'], SUBCAT='trans'] walked) (PP[AGR=?a] (Prep[NUM=?n, TENSE=?t] on) (NP[AGR=[NUM='sg']] (PropN[AGR=[NUM='sg']] Tuesday)))) (PUNC[] .))
+(S[-INV] (NP[AGR=[NUM=?n2]] (PropN[AGR=[NUM=?n], PER=3] Mel)) (VP[AGR=[NUM=?n2, TENSE='past']] (V[AGR=[NUM=?n, TENSE='past'], SUBCAT='trans'] walked) (PP[AGR=?a] (Prep[NUM=?n, TENSE=?t] for) (NP[AGR=[NUM='pl']] (CD[AGR=[NUM='pl']] five) (Noun[AGR=[NUM='pl']] minutes)))) (PUNC[] .))

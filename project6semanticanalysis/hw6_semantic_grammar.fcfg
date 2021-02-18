@@ -1,0 +1,53 @@
+% start S
+
+# ###############
+# Grammar productions
+# ##############
+
+# S expansion productions
+S[SEM = <?subj(?vp)>] -> NP[SEM = ?subj] VP[SEM = ?vp]
+
+VP[SEM = ?v] -> CP[SEM = ?v]  
+VP[SEM = ?v] -> IV[SEM = ?v]
+VP[SEM = ?v] -> VPConj[SEM = ?v]
+VP[SEM = <?not(?v)>] -> AUXV NEG[SEM = ?not] VP[SEM = ?v]
+VP[SEM = <?v(?np)>] -> TV[SEM = ?v] NP[SEM = ?np]
+VPConj[SEM = <?v2(?v1)>] -> VP[SEM = ?v1] CP[SEM = ?v2]
+CP[SEM = <?conj(?v)>] -> Conj[SEM = ?conj] VP[SEM = ?v]
+AUXV -> 'does'
+
+NP[SEM = <?det(?n)>] -> Det[SEM = ?det] Noun[SEM = ?n]
+NP[SEM = <?det(?n)>] -> Det[SEM = ?det] NPConj[SEM = ?n]
+NP[SEM = <?n>] -> Noun[SEM = ?n]
+NP[SEM = <?n>] -> NPConj[SEM = ?n]
+NPConj[SEM = <?n2(?n1)>] -> Noun[SEM = ?n1] CPNoun[SEM = ?n2]
+CPNoun[SEM = <?conj(?n)>] -> Conj[SEM = ?conj] Noun[SEM = ?n]
+
+IV[SEM = <\x.exists e.(eating(e) & eater(e,x))>] -> 'eat' | 'eats'
+IV[SEM = <\x.exists e.(drinking(e) & drinker(e,x))>] -> 'drink'
+
+NEG[SEM=<\Q.(\x -Q(x))>] -> 'not'
+Det[SEM = <\Q P.-exists x.(Q(x) & P(x))>] -> 'no'
+
+Det[SEM = <\Q P.exists x.(Q(x) & P(x))>] -> 'a' | 'an'
+Det[SEM = <\Q P.all x.(Q(x) -> P(x))>] -> 'every' | 'all'
+
+Conj[SEM = <\Q P.(\x (P(x) | Q(x)))>] -> 'or'
+
+Noun[SEM = <\x.essay(x)>] -> 'essay'
+
+Noun[SEM = <\x.sandwich(x)>] -> 'sandwich'
+Noun[SEM = <\x.soda(x)>] -> 'soda'
+Noun[SEM = <\x.bagel(x)>] -> 'bagel'
+
+Noun[SEM = <\x.person(x)>] -> 'person'
+Noun[SEM = <\P.P(Mary)>] -> 'Mary'
+Noun[SEM = <\P.P(John)>] -> 'John'
+Noun[SEM = <\P.P(Jack)>] -> 'Jack'
+Noun[SEM = <\Q.-exists x.(Q(x))>] -> 'nobody'
+
+Noun[SEM = <\x.student(x)>] -> 'student' | 'students'
+
+TV[SEM = <\P \y.P(\x. exists e.(drinking(e) & drinker(e,y) & entity(e,x)))>] -> 'drinks'
+TV[SEM = <\P \y.P(\x. exists e.(eating(e) & eater(e,y) & entity(e,x)))>] -> 'eats'
+TV[SEM = <\P \y.P(\x. exists e.(writing(e) & writer(e,y) & entity(e,x)))>] -> 'writes'

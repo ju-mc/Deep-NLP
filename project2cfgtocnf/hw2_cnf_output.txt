@@ -1,0 +1,62 @@
+
+what is the cheapest one way flight from columbus to indianapolis .
+Number of parses: 0
+
+is there a flight from memphis to los angeles .
+Number of parses: 0
+
+please show me the flights from chicago to detroit that arrive at six p.m. next tuesday .
+Number of parses: 0
+
+how much does first class on that flight cost and how much does coach on that flight cost .
+Number of parses: 0
+
+can you tell me about the flights from saint petersburg to toronto again .
+Number of parses: 0
+
+i would like to find a flight from charlotte to las vegas .
+Number of parses: 0
+
+how far is it from the airport to the city .
+Number of parses: 0
+
+can i have the fare .
+Number of parses: 0
+
+show availability .
+Number of parses: 0
+
+show me northwest flights to detroit .
+Number of parses: 0
+
+show the flights .
+Number of parses: 0
+
+prices .
+Number of parses: 0
+
+list those flights that stop over in salt lake city .
+Number of parses: 0
+
+what is e w r .
+Number of parses: 0
+
+please list the flights leaving newark stopping over in seattle for approximately five hours and then on to san francisco .
+Number of parses: 0
+
+i want to leave before noon .
+Number of parses: 0
+
+how long is the stop in dallas on flight d l nine thirty one .
+Number of parses: 0
+
+i want first class on flight one one one nine .
+Number of parses: 0
+
+please show me all flights from montreal to las vegas .
+Number of parses: 0
+
+i need the shortest evening flight from tampa to cincinnati .
+Number of parses: 0
+
+how far is the airport from new york 's la guardia to downtown .

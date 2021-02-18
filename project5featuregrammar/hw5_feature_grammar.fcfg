@@ -1,0 +1,67 @@
+% start S
+
+# ##################
+# Grammar Productions
+# ##################
+
+# S expansion productions
+S[-INV] -> NP[AGR=?a] VP[AGR=?a] PUNC
+S[+INV] -> V[+AUX, AGR=?a] NP[AGR=?a] VP[AGR=?a] PUNC
+S[-INV] -> WDT[AGR=?a] V[+AUX, AGR=?a] NP[AGR=?a] VP[AGR=?a] PUNC
+S[-INV] -> NP[AGR=?a] VP[AGR=?a] 
+
+# NP expansion productions
+NP[AGR=?a] -> Noun[AGR=?a]
+NP[AGR=?a] -> CD[AGR=?a] Noun[AGR=?a]
+NP[AGR=?a] -> PropN[AGR=?a]
+NP[AGR=?a] -> DT[AGR=?a] Noun[AGR=?a]
+NP[AGR=?a] -> NP[AGR=?a] V[-AUX, SUBCAT=trans, AGR=?a]
+
+# VP expansion productions
+VP[AGR=?a] -> V[SUBCAT=intrans, AGR=?a]
+VP[AGR=?a] -> V[SUBCAT=trans, AGR=?a] NP[+reflex, AGR=?a]
+VP[AGR=?a] -> V[SUBCAT=trans, AGR=?a] PP[AGR=?a]
+VP[AGR=?a] -> V[SUBCAT=ditrans, AGR=?a] NP[AGR=?a] PP[AGR=?a]
+VP[AGR=?a] -> V[SUBCAT=ditrans, AGR=?a] PP[AGR=?a]
+VP[AGR=?a] -> V[AGR=?a] SBar[AGR=?a]
+VP[AGR=?a] -> V[AGR=?a] Adj[AGR=?a]
+
+SBar[AGR=?a] -> Comp[AGR=?a] S[-INV]
+PP[AGR=?a] -> Prep[AGR=?a] NP[NUM=?n]
+PP[AGR=?a] -> Prep[AGR=?a] NP[NUM=?n]
+
+# ##################
+# Lexical Productions
+# ##################
+Noun[AGR=[NUM=sg]] -> 'dog' | 'book' | 'shelf' | 'summit'
+Noun[AGR=[NUM=pl]] -> 'dogs' | 'cats' | 'minutes'
+
+PropN[AGR=[NUM=sg]] -> 'Tuesday'
+
+PropN[PER=3, AGR=[NUM=?n]] -> 'Mel'
+PropN[PER=3, AGR=[NUM=?n]] -> 'Alex'
+
+V[SUBCAT=intrans, AGR=[TENSE=pres, NUM=pl]] -> 'bark'
+V[-AUX, SUBCAT=intrans, AGR=[TENSE=pres, NUM=sg]] -> 'barks' | 'know' | 'knows'
+V[SUBCAT=intrans, AGR=[TENSE=past, NUM=sg]] -> 'was'
+V[SUBCAT=ditrans, AGR=[TENSE=past, NUM=sg]] -> 'put' |'reached'
+V[SUBCAT=trans, AGR=[TENSE=past, NUM=?n]] -> 'saw' | 'walked'
+V[SUBCAT=clause, AGR=[TENSE=past, NUM=sg]] -> 'thought'
+V[-AUX, SUBCAT=trans, PER=3, AGR=[TENSE=pres, NUM=sg]] -> 'knows'
+V[-AUX, SUBCAT=trans, AGR=[TENSE=pres, NUM=sg]] -> 'think' | 'know'
+V[+AUX, -INV, PER=3, AGR=[NUM=sg, TENSE=pres]] -> 'does'
+V[+AUX, +INV, AGR=[NUM=sg, TENSE=past]] -> 'did'
+
+Comp -> 'that'
+
+Adj -> 'interesting'
+
+Prep[TENSE=?t, NUM=?n] -> 'for'
+Prep[TENSE=?t, NUM=?n] -> 'on'
+
+DT[AGR=[NUM=?n]] -> 'the'
+WDT[AGR=[NUM=?n]] -> 'what'
+
+CD[AGR=[NUM=pl]] -> 'five'
+
+PUNC -> '.'|'?'
